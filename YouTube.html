@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .container{
+    display: grid;
+    grid-template-areas: "side header header header header header header"
+    "side main main main main main main"
+    "side main main main main main main"
+    "side main main main main main main"
+    "side main main main main main main"
+  ;
+     height:300px;
+  }
+  .container>div{
+    border:1px solid blue;
+  }
+  .box1{
+    grid-area: side;
+  }
+  .box2{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+  }
+  .item2{
+    align-self: center;
+  }
+  .item3{
+
+  }
+  .box3{
+    grid-area: main;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box1">box1</div>
+    <div class="box2">
+      <div class="item1">item1</div>
+      <div class="item2">item2</div>
+      <div class="item3">
+        <video src="../images/v2.mp4"></video>
+</div>
+      </div>
+    <div class="box3">box3</div>
+  </div>
+</body>
+</html>
